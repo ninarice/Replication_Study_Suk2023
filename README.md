@@ -18,38 +18,6 @@ The [original 2023 paper](https://github.com/willdemelo/Replication_Study_Suk202
 
 We utilized a custom website to host the survey that was used to collect our data. This website was hosted on the popular crowdworking website, Prolific, where we worked with online participants to get our results. To review our methodology, you can view the [.html code](https://github.com/willdemelo/Replication_Study_Suk2023/blob/main/website/index.html), or take the survey yourself [here](https://willdemelo.github.io/Replication_Study_Suk2023/website/). Notable features of this website include the usage of jsPysch plugins to create our questions and general infrastructure, restrictions we placed on participants' answering (for instance, that they must answer to move forward, and cannot put in the wrong kind of answer) as well as the datapipe that takes raw data from the survey and sends it to our public repository at the [Open Science Framework](https://osf.io/jzx7e/).
 
-### Writeup
-
-This is my full writeup of our entire replication effort. You can find it [here](https://github.com/willdemelo/Replication_Study_Suk2023/blob/main/writeup.qmd). It is a comprehensive look at our methods, results, and intepretation thereof. You can also find a fully rendered version of the writeup published [online](https://rpubs.com/willdemelo/smrepstudy).
-
-## Contribution Overview
-
-I contributed to this project in the following ways, as documented by my CRediT statement at the end of the writeup file:
-
-*Software*:
-
-I made significant contributions to the production of our website's .html code. Specifically, I wrote the code used in the prompts and questions for the experiment, and set up the data pipeline between our website and our OSF repository. Additionally, I wrote nearly all of the R code in the writeup, especially the functions for cleaning the raw data and performing the statistical tests. I also created visualizations in the discussion section for ease of interpretation.
-
-*Investigation*:
-
-I hosted our survey on the crowdworking website, Prolific. Essentially, I was in charge of establising parameters describing exactly how our data collection should progress, supervising the collection of responses as they were coming in, and paying our participants for their time at the end of data collection.
-
-*Data curation*:
-
-I checked our data for PII, so that none of participants' identities would be accidentally compromised. Additionally, I formatted the raw data from individual .csv files for each response into a single .csv file that could be analyzed in R. I then cleaned that .csv file further to remove JSON formatting and prepare it for analysis.
-
-*Formal analysis*:
-
-I conducted all of the calculations in the writeup, including the series of regression analyses, Cohen's D calculations, and Z and Chi-squared hypothsis tests. I also worked on the presentation and visualizations for the cleaned-up version of the writeup that I published online.
-
-*Validation*:
-
-I was responsible for the discussion section of the writeup, where I describe in detail how our results fail to replicate and possible reasons for why. For instance, I show that the differences between our results and the original study's are likely due to the difference among our samples; the original study used a UK sample, and we used a US sample. The cultural differences between two populations may have exerted a confounding effect on our results, leading to a lack of variation between our two conditions and causing our confirmatory analyses to fail ro replicate.
-
-*Writing - original draft and Writing - review & editing*:
-
-I wrote the original draft of the writeup used for our [OSF pre-registration](https://osf.io/52sfp) and further reviewed and edited that draft for the final product published online.
-
 ## Resources
 - **Editor Used:** RStudio
 - **R Version:** R 4.4.1
